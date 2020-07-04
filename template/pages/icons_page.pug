@@ -1,0 +1,553 @@
+extends ../layouts/primary.pug
+
+block variables
+    -var page = 'icons'
+
+    -var type = 'inner'
+
+    -var dest = 'icon-inner'
+
+block header
+
+    include ../blocks/_aside-dropdown/_aside-dropdown
+        // header start
+    
+    header.header.header--inner
+        .container-fluid
+            .row.no-gutters.justify-content-between
+
+                .col-auto.d-flex.align-items-center
+                    .dropdown-trigger.dropdown-trigger--inner.d-none.d-sm-block
+                        .dropdown-trigger__item
+
+                    .header-logo
+                        a.header-logo__link(href="index.html")
+                            img.header-logo__img(src="img/jdDynamicLink-white.png", alt="logo")
+
+                .col-auto
+                    include ../blocks/_main-menu/_main-menu
+
+                .col-auto.d-flex.align-items-center
+
+                    // lang select start
+                    ul.lang-select.lang-select--inner
+                        li.lang-select__item.lang-select__item--active
+                            span En
+                            ul.lang-select__sub-list
+                                li
+                                    a(href="#") French
+                                li
+                                    a(href="#") Spanish
+                                li
+                                    a(href="#") Deutsch
+                                li
+                                    a(href="#") Russian
+                    // lang select end              
+
+                    a.button.button--squared(href="https://play.google.com/store/apps/details?id=in.co.oxeye.jivdaya") 
+                        span Install JivDaya
+
+                    .dropdown-trigger.dropdown-trigger--inner.d-block.d-sm-none
+                        .dropdown-trigger__item
+
+    // header end
+
+block main
+    section.section.storie-details
+
+    img.storie-details__bg(src="img/inner-pages.png", alt="img")
+    section.promo-primary(class=(dest === "elements" ? "promo-primary--elements" : undefined))
+        picture
+            source(srcset='img/about.jpg', media='(min-width: 992px)')
+            img.img--bg(src='img/about.jpg', alt='img')
+
+        .container
+            .row
+                .col-auto
+                    .align-container
+                        .align-container__item
+                            span.promo-primary__pre-title JivDaya
+                            h1.promo-primary__title #[span Causes]
+                            
+    .container.icon_all
+
+        .row
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_1-1.png", alt="img")
+                        svg.icon.icon-item__icon.icon--red
+                            use(xlink:href="#donation")
+                    .icon-item__text
+                        p Emergencies
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_2-2.png", alt="img")
+                        svg.icon.icon-item__icon.icon--orange
+                            use(xlink:href="#church")
+                    .icon-item__text
+                        p NGO/Charities
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_3-3.png", alt="img")
+                        svg.icon.icon-item__icon.icon--green
+                            use(xlink:href="#healthcare")
+                        .icon-item__text
+                            p Medical Need
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_4-4.png", alt="img")
+                        svg.icon.icon-item__icon.icon--blue
+                            use(xlink:href="#animal_shelter")
+                    .icon-item__text
+                        p Animal Help
+
+        .row
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_1-1.png", alt="img")
+                        svg.icon.icon-item__icon.icon--red
+                            use(xlink:href="#bird")
+                    .icon-item__text
+                        p Bird Help
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                    svg.icon.icon-item__icon.icon--orange
+                        use(xlink:href="#education")
+                    .icon-item__text
+                        p Education
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_3-3.png", alt="img")
+                        svg.icon.icon-item__icon.icon--green
+                            use(xlink:href="#child")
+                    .icon-item__text
+                        p Children
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_4-4.png", alt="img")
+                        svg.icon.icon-item__icon.icon--blue
+                            use(xlink:href="#charity")
+                    .icon-item__text
+                        p Community
+
+        .row
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_1-1.png", alt="img")
+                        svg.icon.icon-item__icon.icon--red
+                            use(xlink:href="#024-wheelchair")
+                    .icon-item__text
+                        p Elderly
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_2-2.png", alt="img")
+                        svg.icon.icon-item__icon.icon--orange
+                            use(xlink:href="#006-woman")
+                    .icon-item__text
+                        p Women
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_3-3.png", alt="img")
+                        svg.icon.icon-item__icon.icon--green
+                            use(xlink:href="#023-ecology")
+                        .icon-item__text
+                            p Environment
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_4-4.png", alt="img")
+                        svg.icon.icon-item__icon.icon--blue
+                            use(xlink:href="#049-smartphone")
+                    .icon-item__text
+                        p Technology
+    
+        .row
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_1-1.png", alt="img")
+                        svg.icon.icon-item__icon.icon--red
+                            use(xlink:href="#donation")
+                    .icon-item__text
+                        p Emergencies
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_2-2.png", alt="img")
+                        svg.icon.icon-item__icon.icon--orange
+                            use(xlink:href="#church")
+                    .icon-item__text
+                        p NGO/Charities
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_3-3.png", alt="img")
+                        svg.icon.icon-item__icon.icon--green
+                            use(xlink:href="#healthcare")
+                        .icon-item__text
+                            p Medical Need
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_4-4.png", alt="img")
+                        svg.icon.icon-item__icon.icon--blue
+                            use(xlink:href="#animal_shelter")
+                    .icon-item__text
+                        p Animal Help
+
+        .row
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_1-1.png", alt="img")
+                        svg.icon.icon-item__icon.icon--red
+                            use(xlink:href="#bird")
+                    .icon-item__text
+                        p Bird Help
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                    svg.icon.icon-item__icon.icon--orange
+                        use(xlink:href="#education")
+                    .icon-item__text
+                        p Education
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_3-3.png", alt="img")
+                        svg.icon.icon-item__icon.icon--green
+                            use(xlink:href="#child")
+                    .icon-item__text
+                        p Children
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_4-4.png", alt="img")
+                        svg.icon.icon-item__icon.icon--blue
+                            use(xlink:href="#charity")
+                    .icon-item__text
+                        p Community
+
+        .row
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_1-1.png", alt="img")
+                        svg.icon.icon-item__icon.icon--red
+                            use(xlink:href="#024-wheelchair")
+                    .icon-item__text
+                        p Elderly
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_2-2.png", alt="img")
+                        svg.icon.icon-item__icon.icon--orange
+                            use(xlink:href="#006-woman")
+                    .icon-item__text
+                        p Women
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_3-3.png", alt="img")
+                        svg.icon.icon-item__icon.icon--green
+                            use(xlink:href="#023-ecology")
+                        .icon-item__text
+                            p Environment
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_4-4.png", alt="img")
+                        svg.icon.icon-item__icon.icon--blue
+                            use(xlink:href="#049-smartphone")
+                    .icon-item__text
+                        p Technology
+        
+        .row
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_1-1.png", alt="img")
+                        svg.icon.icon-item__icon.icon--red
+                            use(xlink:href="#donation")
+                    .icon-item__text
+                        p Emergencies
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_2-2.png", alt="img")
+                        svg.icon.icon-item__icon.icon--orange
+                            use(xlink:href="#church")
+                    .icon-item__text
+                        p NGO/Charities
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_3-3.png", alt="img")
+                        svg.icon.icon-item__icon.icon--green
+                            use(xlink:href="#healthcare")
+                        .icon-item__text
+                            p Medical Need
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_4-4.png", alt="img")
+                        svg.icon.icon-item__icon.icon--blue
+                            use(xlink:href="#animal_shelter")
+                    .icon-item__text
+                        p Animal Help
+
+        .row
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_1-1.png", alt="img")
+                        svg.icon.icon-item__icon.icon--red
+                            use(xlink:href="#bird")
+                    .icon-item__text
+                        p Bird Help
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                    svg.icon.icon-item__icon.icon--orange
+                        use(xlink:href="#education")
+                    .icon-item__text
+                        p Education
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_3-3.png", alt="img")
+                        svg.icon.icon-item__icon.icon--green
+                            use(xlink:href="#child")
+                    .icon-item__text
+                        p Children
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_4-4.png", alt="img")
+                        svg.icon.icon-item__icon.icon--blue
+                            use(xlink:href="#charity")
+                    .icon-item__text
+                        p Community
+
+        .row
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_1-1.png", alt="img")
+                        svg.icon.icon-item__icon.icon--red
+                            use(xlink:href="#024-wheelchair")
+                    .icon-item__text
+                        p Elderly
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_2-2.png", alt="img")
+                        svg.icon.icon-item__icon.icon--orange
+                            use(xlink:href="#006-woman")
+                    .icon-item__text
+                        p Women
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_3-3.png", alt="img")
+                        svg.icon.icon-item__icon.icon--green
+                            use(xlink:href="#023-ecology")
+                        .icon-item__text
+                            p Environment
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_4-4.png", alt="img")
+                        svg.icon.icon-item__icon.icon--blue
+                            use(xlink:href="#049-smartphone")
+                    .icon-item__text
+                        p Technology
+    
+        .row
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_1-1.png", alt="img")
+                        svg.icon.icon-item__icon.icon--red
+                            use(xlink:href="#donation")
+                    .icon-item__text
+                        p Emergencies
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_2-2.png", alt="img")
+                        svg.icon.icon-item__icon.icon--orange
+                            use(xlink:href="#church")
+                    .icon-item__text
+                        p NGO/Charities
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_3-3.png", alt="img")
+                        svg.icon.icon-item__icon.icon--green
+                            use(xlink:href="#healthcare")
+                        .icon-item__text
+                            p Medical Need
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_4-4.png", alt="img")
+                        svg.icon.icon-item__icon.icon--blue
+                            use(xlink:href="#animal_shelter")
+                    .icon-item__text
+                        p Animal Help
+
+        .row
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_1-1.png", alt="img")
+                        svg.icon.icon-item__icon.icon--red
+                            use(xlink:href="#bird")
+                    .icon-item__text
+                        p Bird Help
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                    svg.icon.icon-item__icon.icon--orange
+                        use(xlink:href="#education")
+                    .icon-item__text
+                        p Education
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_3-3.png", alt="img")
+                        svg.icon.icon-item__icon.icon--green
+                            use(xlink:href="#child")
+                    .icon-item__text
+                        p Children
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_4-4.png", alt="img")
+                        svg.icon.icon-item__icon.icon--blue
+                            use(xlink:href="#charity")
+                    .icon-item__text
+                        p Community
+
+        .row
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_1-1.png", alt="img")
+                        svg.icon.icon-item__icon.icon--red
+                            use(xlink:href="#024-wheelchair")
+                    .icon-item__text
+                        p Elderly
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_2-2.png", alt="img")
+                        svg.icon.icon-item__icon.icon--orange
+                            use(xlink:href="#006-woman")
+                    .icon-item__text
+                        p Women
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_3-3.png", alt="img")
+                        svg.icon.icon-item__icon.icon--green
+                            use(xlink:href="#023-ecology")
+                        .icon-item__text
+                            p Environment
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_4-4.png", alt="img")
+                        svg.icon.icon-item__icon.icon--blue
+                            use(xlink:href="#049-smartphone")
+                    .icon-item__text
+                        p Technology
+
+        .row
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_1-1.png", alt="img")
+                        svg.icon.icon-item__icon.icon--red
+                            use(xlink:href="#donation")
+                    .icon-item__text
+                        p Emergencies
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_2-2.png", alt="img")
+                        svg.icon.icon-item__icon.icon--orange
+                            use(xlink:href="#church")
+                    .icon-item__text
+                        p NGO/Charities
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_3-3.png", alt="img")
+                        svg.icon.icon-item__icon.icon--green
+                            use(xlink:href="#healthcare")
+                        .icon-item__text
+                            p Medical Need
+
+            .col-6.col-lg-3
+                .icon-item
+                    .icon-item__img
+                        img.img--layout(src="img/icon_4-4.png", alt="img")
+                        svg.icon.icon-item__icon.icon--blue
+                            use(xlink:href="#animal_shelter")
+                    .icon-item__text
+                        p Animal Help
+
+block footer
+
+    include ../blocks/_footer/_footer

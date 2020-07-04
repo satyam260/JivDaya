@@ -1,0 +1,302 @@
+extends ../layouts/primary.pug
+
+block variables
+
+	-var page = 'team'
+
+	-var type = 'inner'
+
+	-var dest = 'elements'
+
+block header
+
+	include ../blocks/_aside-dropdown/_aside-dropdown
+
+	// header start
+	
+	header.header.header--inner
+		.container-fluid
+			.row.no-gutters.justify-content-between
+
+				.col-auto.d-flex.align-items-center
+					.dropdown-trigger.dropdown-trigger--inner.d-none.d-sm-block
+						.dropdown-trigger__item
+
+					.header-logo
+						a.header-logo__link(href="index.html")
+							img.header-logo__img(src="img/jdDynamicLink-white.png", alt="logo")
+
+				.col-auto
+					include ../blocks/_main-menu/_main-menu
+
+				.col-auto.d-flex.align-items-center
+
+					// lang select start
+					ul.lang-select.lang-select--inner
+						li.lang-select__item.lang-select__item--active
+							span En
+							ul.lang-select__sub-list
+								li
+									a(href="#") French
+								li
+									a(href="#") Spanish
+								li
+									a(href="#") Deutsch
+								li
+									a(href="#") Russian
+					// lang select end				
+
+					a.button.button--squared(href="https://play.google.com/store/apps/details?id=in.co.oxeye.jivdaya") 
+						span Install JivDaya
+
+					.dropdown-trigger.dropdown-trigger--inner.d-block.d-sm-none
+						.dropdown-trigger__item
+
+	// header end
+
+block main
+
+	section.promo-primary(class=(dest === "elements" ? "promo-primary--elements" : undefined))
+
+		picture
+			source(srcset='img/volunteer.jpg', media='(min-width: 992px)')
+			img.img--bg(src='img/volunteer.jpg', alt='img')
+
+		.promo-primary__description 
+			span Elements
+
+		.container
+			.row
+				.col-auto
+					.align-container
+						.align-container__item
+							span.promo-primary__pre-title JivDaya
+							h1.promo-primary__title #[span Team]
+
+	section.section.elements
+		.container
+			.row
+				.col-auto
+					
+
+			.row
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					// iteam start				
+					.team-item.team-item--rounded
+						.team-item__img-holder
+							img.img--layout(src="img/team_1.png", alt="layout")
+							.team-item__img
+								img.img--bg(src="img/shekhar.jpg", alt="teammate")
+						.team-item__description
+							.team-item__name Shubhranshu Shekhar
+					// iteam end
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					// iteam start				
+					.team-item.team-item--rounded
+						.team-item__img-holder
+							img.img--layout(src="img/team_2.png", alt="layout")
+							.team-item__img
+								img.img--bg(src="img/mayank.jpg", alt="teammate")
+						.team-item__description
+							.team-item__name Mayank Gandhi
+					// iteam end
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					// iteam start				
+					.team-item.team-item--rounded
+						.team-item__img-holder
+							img.img--layout(src="img/team_3.png", alt="layout")
+							.team-item__img
+								img.img--bg(src="img/shashank.jpg", alt="teammate")
+						.team-item__description
+							.team-item__name Shashank Shekhar
+					// iteam end
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					// iteam start				
+					.team-item.team-item--rounded
+						.team-item__img-holder
+							img.img--layout(src="img/team_4.png", alt="layout")
+							.team-item__img
+								img.img--bg(src="img/sukesh.jpg", alt="teammate")
+						.team-item__description
+							.team-item__name Sukesh Jain
+					// iteam end
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					// iteam start				
+					.team-item.team-item--rounded
+						.team-item__img-holder
+							img.img--layout(src="img/team_5.png", alt="layout")
+							.team-item__img
+								img.img--bg(src="img/pratyush.jpg", alt="teammate")
+						.team-item__description
+							.team-item__name Pratyush Vaibhav
+					// iteam end
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					// iteam start				
+					.team-item.team-item--rounded
+						.team-item__img-holder
+							img.img--layout(src="img/team_6.png", alt="layout")
+							.team-item__img
+								img.img--bg(src="img/sarb.jpg", alt="teammate")
+						.team-item__description
+							.team-item__name Sarbagya Dhaubanjar
+					// iteam end
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					// iteam start				
+					.team-item.team-item--rounded
+						.team-item__img-holder
+							img.img--layout(src="img/team_7.png", alt="layout")
+							.team-item__img
+								img.img--bg(src="img/utkarsh.jpg", alt="teammate")
+						.team-item__description
+							.team-item__name Utkarsh Pandey
+					// iteam end
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					// iteam start				
+					.team-item.team-item--rounded
+						.team-item__img-holder
+							img.img--layout(src="img/team_8.png", alt="layout")
+							.team-item__img
+								img.img--bg(src="img/sayant.jpg", alt="teammate")
+						.team-item__description
+							.team-item__name Sayant Jain
+					// iteam end		
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					// iteam start				
+					.team-item.team-item--rounded
+						.team-item__img-holder
+							img.img--layout(src="img/team_1.png", alt="layout")
+							.team-item__img
+								img.img--bg(src="img/sanskar.jpg", alt="teammate")
+						.team-item__description
+							.team-item__name Sanskar Khandelwal
+					// iteam end		
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					// iteam start				
+					.team-item.team-item--rounded
+						.team-item__img-holder
+							img.img--layout(src="img/team_2.png", alt="layout")
+							.team-item__img
+								img.img--bg(src="img/abhishek.jpg", alt="teammate")
+						.team-item__description
+							.team-item__name Abhishek Kumar
+					// iteam end	
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					// iteam start				
+					.team-item.team-item--rounded
+						.team-item__img-holder
+							img.img--layout(src="img/team_2.png", alt="layout")
+							.team-item__img
+								img.img--bg(src="img/shivang.jpg", alt="teammate")
+						.team-item__description
+							.team-item__name Shivang Pandey
+					// iteam end
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					// iteam start				
+					.team-item.team-item--rounded
+						.team-item__img-holder
+							img.img--layout(src="img/team_8.png", alt="layout")
+							.team-item__img
+								img.img--bg(src="img/satyam.jpg", alt="teammate")
+						.team-item__description
+							.team-item__name Satyam Upadhyay
+					// iteam end
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					// iteam start				
+					.team-item.team-item--rounded
+						.team-item__img-holder
+							img.img--layout(src="img/team_1.png", alt="layout")
+							.team-item__img
+								img.img--bg(src="img/saloni.jpg", alt="teammate")
+						.team-item__description
+							.team-item__name Saloni Sharma
+					// iteam end
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					// iteam start				
+					.team-item.team-item--rounded
+						.team-item__img-holder
+							img.img--layout(src="img/team_4.png", alt="layout")
+							.team-item__img
+								img.img--bg(src="img/arpit.jpg", alt="teammate")
+						.team-item__description
+							.team-item__name Arpit Verma
+					// iteam end						
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					// iteam start				
+					.team-item.team-item--rounded
+						.team-item__img-holder
+							img.img--layout(src="img/team_3.png", alt="layout")
+							.team-item__img
+								img.img--bg(src="img/sharif.jpg", alt="teammate")
+						.team-item__description
+							.team-item__name Sharif Nawaz
+					// iteam end		
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					// iteam start				
+					.team-item.team-item--rounded
+						.team-item__img-holder
+							img.img--layout(src="img/team_5.png", alt="layout")
+							.team-item__img
+								img.img--bg(src="img/mridul.jpg", alt="teammate")
+						.team-item__description
+							.team-item__name Mirdul Chatterjee
+					// iteam end		
+
+				.col-sm-6.col-lg-4.col-xl-3
+
+					// iteam start				
+					.team-item.team-item--rounded
+						.team-item__img-holder
+							img.img--layout(src="img/team_6.png", alt="layout")
+							.team-item__img
+								img.img--bg(src="img/rohit.jpg", alt="teammate")
+						.team-item__description
+							.team-item__name Rohit Singh
+					// iteam end		
+		
+
+		
+
+		
+
+				
+
+
+
+
+	include ../blocks/_bottom-bg/_bottom-bg
+
+block footer
+
+	include ../blocks/_footer/_footer

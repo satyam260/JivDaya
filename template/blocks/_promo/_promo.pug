@@ -1,0 +1,159 @@
+// promo start
+
+section.promo
+
+	.promo-slider
+
+		.promo-slider__item.promo-slider__item--style-1
+			picture
+				source(srcset='img/typography.jpg' media='(min-width: 835px)')
+				source(srcset='img/typography.jpg' media='(min-width: 376px)')
+				img.img--bg(src='img/typography.jpg' alt='img')
+			.container
+				.row
+					.col-12
+						.align-container
+							.align-container__item
+								.promo-slider__wrapper-1
+									h2.promo-slider__title #[span Post your work in app and]#[br]#[span raise funds globally.]
+								//.promo-slider__wrapper-2
+									p.promo-slider__subtitle Want to support a noble cause?
+								.promo-slider__wrapper-3
+									a(href="#").button.promo-slider__button.button--primary Raise Funds
+
+								.promo-slider__wrapper-2
+									p.promo-slider__subtitle It will just take 2 minutes.
+
+		.promo-slider__item.promo-slider__item--style-2
+			picture
+				source(srcset='img/intro-footer.jpg' media='(min-width: 835px)')
+				source(srcset='img/intro-footer.jpg' media='(min-width: 376px)')
+				img.img--bg(src='img/intro-footer.jpg' alt='img')
+			.container
+				.row
+					.col-xl-7
+						.align-container
+							.align-container__item
+								.promo-slider__wrapper-1
+									h2.promo-slider__title #[span What We] #[span Do]
+								.promo-slider__wrapper-2
+									p.promo-slider__subtitle We help you lend a hand to causes.
+								.promo-slider__wrapper-3
+									a(href="#").button.promo-slider__button.button--primary View More...
+
+		.promo-slider__item.promo-slider__item--style-3
+			picture
+				source(srcset='img/contacts.jpg' media='(min-width: 835px)')
+				source(srcset='img/contacts.jpg' media='(min-width: 376px)')
+				img.img--bg(src='img/contacts.jpg', alt='img')
+			.container
+				.row
+					.col-xl-8.offset-xl-2
+						.align-container
+							.align-container__item
+								.promo-slider__wrapper-1
+									h2.promo-slider__title #[span How JivDaya App] #[span Works]
+								//- .promo-slider__wrapper-2
+									p.promo-slider__subtitle Register with filling details
+								//.row
+									.col-lg-4.col-md-4
+										p(class='promo-slider__subtitle') Start Posting your work
+										pre
+											| Tell your story
+											| Add pictures/videos
+											| Check your fundraiser
+									.col-lg-4.col-md-4
+										p(class='promo-slider__subtitle') Share with friends
+										pre
+											| Send emails
+											| Send link sms
+											| Share on social media
+									.col-lg-4.col-md-4
+										p(class='promo-slider__subtitle') Manage Donations
+										pre
+											| Accept Donations
+											| Thank donors
+											| Withdraw funds automatically
+																
+								.promo-slider__wrapper-3
+									a(href="#").button.promo-slider__button.button--primary Raise Funds
+		
+		.promo-slider__item.promo-slider__item--style-1
+			picture
+				source(srcset='img/events.jpg' media='(min-width: 835px)')
+				source(srcset='img/events.jpg' media='(min-width: 376px)')
+				img.img--bg(src='img/events.jpg' alt='img')
+			.container
+				.row
+					.col-xl-7
+						.align-container
+							.align-container__item
+								.promo-slider__wrapper-1
+									h2.promo-slider__title #[span Some text goes ] #[span here]
+								.promo-slider__wrapper-2
+									p.promo-slider__subtitle A brief description.
+								.promo-slider__wrapper-3
+									a(href="#").button.promo-slider__button.button--primary View More...
+
+		.promo-slider__item.promo-slider__item--style-2
+			picture
+				source(srcset='img/promo.jpg' media='(min-width: 835px)')
+				source(srcset='img/promo.jpg' media='(min-width: 376px)')
+				img.img--bg(src='img/promo.jpg' alt='img')
+			.container
+				.row
+					.col-xl-7
+						.align-container
+							.align-container__item
+								.promo-slider__wrapper-1
+									h2.promo-slider__title #[span What We] #[span Do]
+								.promo-slider__wrapper-2
+									p.promo-slider__subtitle We help you lend a hand to causes.
+								.promo-slider__wrapper-3
+									a(href="#").button.promo-slider__button.button--primary View More...
+
+	// promo socials start
+	ul.promo-socials
+		li.promo-socials__item
+			a.promo-socials__link(href="#")
+				+fa('instagram')
+		li.promo-socials__item
+			a.promo-socials__link(href="#")
+				+fa('google-plus')
+		li.promo-socials__item
+			a.promo-socials__link(href="#")
+				+fa('twitter')
+		li.promo-socials__item
+			a.promo-socials__link(href="#")
+				+fa('facebook')
+	// promo socials end
+
+	// promo pannel start
+	//- .promo-pannel
+	//- 	a.anchor.promo-pannel__anchor(href="#about") 
+	//- 		span Scroll Down
+	//- 	.promo-pannel__video
+	//- 		img.img--bg(src="img/text-section_left.png" alt="image")
+	//- 		a.video-trigger(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk")
+	//- 			span Watch our video
+	//- 			+fa('play')
+	//- 	.promo-pannel__phones
+	//- 		p.promo-pannel__title Phone numbers
+	//- 		a.promo-pannel__link(href="tel:+180012345678") + 1800 - 123 456 78
+	//- 		a.promo-pannel__link(href="tel:+18009756511") + 1800 - 975 65 11
+	//- 	.promo-pannel__email
+	//- 		p.promo-pannel__title Email
+	//- 		a.promo-pannel__link(href="mailto:support@helpo.org") support@helpo.org
+	// promo pannel end
+
+	// slider nav start
+	.slider__nav.slider__nav--promo
+		.promo-slider__count
+		.slider__arrows
+			.slider__prev
+				+fa('chevron-left')
+			.slider__next
+				+fa('chevron-right')
+	// slider nav end
+
+// promo end

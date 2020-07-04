@@ -1,0 +1,108 @@
+// aside dropdown start
+
+.aside-dropdown
+	.aside-dropdown__inner
+		span.aside-dropdown__close
+			+svg('close')
+
+		.aside-dropdown__item.d-lg-none.d-block
+
+			ul.aside-menu
+
+				li.aside-menu__item.aside-menu__item--has-child(class=(type === "front" ? "aside-menu__item--active" : undefined))
+					a.aside-menu__link(href="index.html")
+						span Home
+
+					
+
+				li.aside-menu__item.aside-menu__item--has-child(class=(dest === "pages" ? "aside-menu__item--active" : undefined))
+					a.aside-menu__link(href="javascript:void(0);")
+						span About Us
+
+					// sub menu start
+					ul.aside-menu__sub-list
+						li(class=(page === "about" ? "item--active" : undefined))
+							a(href="index.html#what")
+								span What we do
+						li(class=(page === "typography" ? "item--active" : undefined))
+							a(href="typography.html") 
+								span How it works
+						li(class=(page === "donors" ? "item--active" : undefined))
+							a(href="donors.html")
+								span Media Coverage
+						li(class=(page === "volunteer" ? "item--active" : undefined))
+							a(href="volunteer.html")
+								span Testimonials
+					// sub menu end
+
+				li.aside-menu__item.aside-menu__item--has-child(class=(dest === "help" ? "aside-menu__item--active" : undefined))
+					a.aside-menu__link(href="javascript:void(0);")
+						span Help
+
+					// sub menu start
+					ul.aside-menu__sub-list
+						li(class=(page === "faq" ? "item--active" : undefined))
+							a(href="faq.html")
+								span FAQ
+						li(class=(page === "typography" ? "item--active" : undefined))
+							a(href="guidelines.html") 
+								span Guidelines
+						li(class=(page === "donors" ? "item--active" : undefined))
+							a(href="fund-raising.html")
+								span Fundraiser Tips
+						li(class=(page === "volunteer" ? "item--active" : undefined))
+							a(href="pricing-plan.html")
+								span Pricing
+						li(class=(page === "member" ? "item--active" : undefined))
+							a(href="trust-and-safety.html")
+								span Trust & Safety
+						li(class=(page === "events" ? "item--active" : undefined))
+							a(href="privacy-policy.html")
+								span Privacy Policy
+						li(class=(page === "event-details" ? "item--active" : undefined))
+							a(href="term-condition.html")
+								span Terms & Conditions
+					// sub menu end
+
+
+				li.aside-menu__item(class=(page === "contacts" ? "aside-menu__item--active" : undefined))
+					a.aside-menu__link(href="contacts.html")
+						span Contacts
+
+				li.aside-menu__item.aside-menu__item--has-child(class=(dest === "elements" ? "aside-menu__item--active" : undefined))
+					a.aside-menu__link(href="team.html")
+						span Team
+
+					
+
+		.aside-dropdown__item
+
+			
+
+			.aside-inner
+				span.aside-inner__title Email
+				a.aside-inner__link(href="mailto:support@jivdaya.co.in") support@jivdaya.co.in
+
+			.aside-inner
+				span.aside-inner__title Phone number
+				a.aside-inner__link(href="tel:+91 9909777995") +91 9909777995
+
+			ul.aside-socials
+				li.aside-socials__item
+					a.aside-socials__link(href="#")
+						+fa('instagram')
+				li.aside-socials__item
+					a.aside-socials__link(href="#")
+						+fa('google-plus')
+				li.aside-socials__item
+					a.aside-socials__link.aside-socials__link--active(href="#")
+						+fa('twitter')
+				li.aside-socials__item
+					a.aside-socials__link(href="#")
+						+fa('facebook')
+
+		.aside-dropdown__item
+			a.button.button--squared(href="https://play.google.com/store/apps/details?id=in.co.oxeye.jivdaya")
+				span Install JivDaya
+
+// aside dropdown end

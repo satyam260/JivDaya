@@ -1,0 +1,79 @@
+// main menu start
+
+nav
+	ul.main-menu(class=(type === "inner" ? "main-menu--inner" : undefined))
+
+		li.main-menu__item.main-menu__item--has-child(class=(type === "front" ? "main-menu__item--active" : undefined))
+			a.main-menu__link(href="index.html")
+				span Home
+
+			// sub menu start
+
+			// sub menu end
+
+		li.main-menu__item.main-menu__item--has-child(class=(dest === "pages" ? "main-menu__item--active" : undefined))
+			a.main-menu__link(href="javascript:void(0);")
+				span About Us
+
+			// sub menu start
+			ul.main-menu__sub-list.sub-list--style-2
+				li(class=(page === "about" ? "item--active" : undefined))
+					a(href="index.html#what")
+						span What we do
+				li(class=(page === "typography" ? "item--active" : undefined))
+					a(href="typography.html") 
+						span How it works
+				li(class=(page === "donors" ? "item--active" : undefined))
+					a(href="donors.html")
+						span Media Coverage
+				li(class=(page === "volunteer" ? "item--active" : undefined))
+					a(href="volunteer.html")
+						span Testimonials
+				
+			// sub menu end
+
+		li.main-menu__item.main-menu__item--has-child(class=(dest === "help" ? "main-menu__item--active" : undefined))
+			a.main-menu__link(href="javascript:void(0);")
+				span Help
+
+			// sub menu start
+			ul.main-menu__sub-list.sub-list--style-2
+				li(class=(page === "faq" ? "item--active" : undefined))
+					a(href="faq.html")
+						span FAQ
+				li(class=(page === "typography" ? "item--active" : undefined))
+					a(href="guidelines.html") 
+						span Guidelines
+				li(class=(page === "donors" ? "item--active" : undefined))
+					a(href="fund-raising.html")
+						span Fundraiser Tips
+				li(class=(page === "volunteer" ? "item--active" : undefined))
+					a(href="pricing-plan.html")
+						span Pricing
+				li(class=(page === "member" ? "item--active" : undefined))
+					a(href="trust-and-safety.html")
+						span Trust & Safety
+				li(class=(page === "events" ? "item--active" : undefined))
+					a(href="privacy-policy.html")
+						span Privacy Policy
+				li(class=(page === "event-details" ? "item--active" : undefined))
+					a(href="term-condition.html")
+						span Terms & Conditions
+				
+			// sub menu end
+
+
+
+
+
+		li.main-menu__item(class=(page === "contacts" ? "main-menu__item--active" : undefined))
+			a.main-menu__link(href="contacts.html")
+				span Contacts
+
+		li.main-menu__item.main-menu__item--has-child(class=(dest === "elements" ? "main-menu__item--active" : undefined))
+			a.main-menu__link(href="team.html")
+				span Team
+
+			
+
+// main menu end

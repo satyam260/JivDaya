@@ -1,0 +1,83 @@
+// footer start
+
+footer.footer
+	.container
+		.row
+
+			.col-sm-6.col-lg-3
+
+				.footer-logo
+					a.footer-logo__link(href="index.html")
+						img.footer-logo__img(src="img/jdDynamicLink_footer.png", alt="logo")
+
+				// footer socials start
+				ul.footer-socials
+					li.footer-socials__item
+						a.footer-socials__link(href="#")
+							+fa('facebook')
+					li.footer-socials__item
+						a.footer-socials__link(href="#")
+							+fa('twitter')
+					li.footer-socials__item
+						a.footer-socials__link(href="#")
+							+fa('google-plus')
+					li.footer-socials__item
+						a.footer-socials__link(href="#")
+							+fa('instagram')
+				// footer socials end
+
+			.col-sm-6.col-lg-3
+
+				h4.footer__title Contacts
+				.footer-contacts
+					p.footer-contacts__address 3 Bharat Kutir, Ramji<br> Tekra<br>Valsad, Gujarat, India
+					li.footer-contact__item
+						a.footer-contact__link(href="tel:+91 9909777995")
+							+fa('phone') 
+							p.footer-contacts__phone  +91 9909777995
+					li.footer-contact__item
+						a.footer-contact__link(href="mailto:support@jivdaya.co.in")
+							+fa('envelope')
+							p.footer-contacts__mail  support@jivdaya.co.in
+
+					//- p.footer-contacts__phone Phone: #[a(href="tel:+31859644725") ]
+					//- p.footer-contacts__mail Email: #[a(href="mailto:support@jivdaya.co.in") support@jivdaya.co.in]
+
+			.col-sm-6.col-lg-3
+
+				h4.footer__title Menu & Links
+
+				// footer nav start
+				nav
+					ul.footer-menu
+						li.footer-menu__item(class=(type === "front" ? "footer-menu__item--active" : undefined))
+							a.footer-menu__link(href="index.html") Home
+						li.footer-menu__item(class=(page === "about" ? "footer-menu__item--active" : undefined))
+							a.footer-menu__link(href="index.html#about") About
+						li.footer-menu__item(class=(page === "contacts" ? "footer-menu__item--active" : undefined))
+							a.footer-menu__link(href="contacts.html") Contact Us
+						li.footer-menu__item(class=(page === "team" ? "footer-menu__item--active" : undefined))
+							a.footer-menu__link(href="team.html") Team
+				// footer nav end
+
+			.col-sm-6.col-lg-3
+
+				h4.footer__title Our App
+				p Help Us to Change the World
+				a.button.footer__button.button--filled(href="https://play.google.com/store/apps/details?id=in.co.oxeye.jivdaya&hl=en") Install JivDaya
+
+		.row.align-items-baseline
+
+			.col-md-6
+				.footer-copyright
+
+					a.footer-copyright__link(href="https://oxeye.ai/" target="_blank") © 2020 Oxeye Technologies Private Limited
+
+			.col-md-6
+
+				.footer-privacy
+					a.footer-privacy__link(href="privacy-policy.html") Privacy Policy
+					span.footer-privacy__divider |
+					a.footer-privacy__link(href="term-condition.html") Terms & Condition
+
+// footer end
